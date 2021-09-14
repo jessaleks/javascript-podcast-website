@@ -32249,6 +32249,8 @@ body {
   background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
 }
 
+/* TODO Add base styles for things such as headings, paragraphs, etc */
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

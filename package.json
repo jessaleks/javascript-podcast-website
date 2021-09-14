@@ -3,14 +3,17 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "astro:dev": "astro dev",
+    "tailwind:dev": "tailwindcss -w -i src/styles.css -o public/compiledstyles.css",
+    "dev": "run-p tailwind:dev astro:dev",
+    "astro:start": "astro dev",
     "build": "astro build",
     "preview": "astro preview"
   },
   "devDependencies": {
     "@astrojs/renderer-preact": "^0.2.1",
     "astro": "^0.20.5",
+    "npm-run-all": "^4.1.5",
     "tailwindcss": "^2.2.15"
   }
 }
